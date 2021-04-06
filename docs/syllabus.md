@@ -13,7 +13,7 @@ kernelspec:
 
 # Syllabus
 
-## 2021/22 Semester; Credit: 3; Class Number: xxx
+2021/22 Semester; Credit: 3; Class Number: xxx
 
 ## Instructor
 Professor Yu-Chiao Liang (梁禹喬)<br>
@@ -31,7 +31,7 @@ xxx and xxx
 ## Website
 [https://yuchiaol.github.io/polar_climate_change_2021_2022/docs/index.html](https://yuchiaol.github.io/polar_climate_change_2021_2022/docs/index.html)
 
-## Grading:
+## Grading
 - Leading discussion: 
   - IPCC’s Special Report (group presentation 10%)
   - Assigned literature (group presentation 10%))
@@ -39,6 +39,7 @@ xxx and xxx
 - Polar vortex and machine learning applications (individual assignment 10%)
 - Linear baroclinic model project (individual assignment 15%, group presentation 15%)
 - Final project (group presentation 30%)
+- Additional credit
 
 ## Course Description
 
@@ -49,18 +50,58 @@ Rapid polar climate change in the past decades was the dominant signature of ant
 ## Course Objective
 This course aims to 1) understand the polar climate change and its interaction with regional and global atmospheric circulations, 2) cover some materials of Chapter 12 - Middle Atmosphere Dynamics - in Holton’s “An Introduction to Dynamic Meteorology”, and 3) train students to use simple atmospheric model to investigate Arctic-midlatitude connections. 
 
-## Course Requirement
+## Course Requirements
 Willingness to lead discussion for reading materials and participate in group cooperation, and basic FORTRAN programing and plotting skills (Python preferred because we will use a machine learning package written in Python!). 
 
-## Relevant Texts and References
-
 ## Tentative Topics
+- Overview of Arctic
+  - Geography, Climatology and Meteorology
+  - A case study for Siberian record-breaking warming
+  - Exploration
+
+- Permafrost
+
+- Glacier and Sea-level Rise
+
+- Snow
+
+- Sea Ice 
+  - Dynamics and Thermodynamics
+  - Modelling and Prediction
+  - Past, Recent, and Future Changes
+
+- Cause and Effect of Arctic Amplification
+  - Local vs Remote Impacts
+  - Mechanisms: Climate Forcing, Climate Feedbacks, and Poleward Energy Transport
+  - Debates on Arctic-midlatitude Linkages
+
+- Polar Stratospheric circulation
+  - Polar Vortex and Stratospheric Sudden Warming
+  - Stratosphere-troposphere Coupling
 
 ## Tentative Schedule
 
+## Relevant Texts and References
+- [IPCC Special Report on the Ocean and Cryosphere in a Changing Climate](https://www.ipcc.ch/srocc)
+  - [Chapter 3 Polar Regions](https://www.ipcc.ch/srocc/chapter/chapter-3-2/)
 
+- Arctic Amplification and Feedbacks
+  - Review Article: {cite}`goosse2018feedbacks`
+  - Forcing Latitudes: {cite}`stuecker2018polar`
 
+- Arctic Amplification and Midlatitude Weather and Climate
+  - Review Article: {cite}`cohen2014arctic`
+  - Classic Paper: {cite}`francis2012arctic`
+  - Weakened Evidence: {cite}`blackport2020arctic`
+  - Model Consistency and Discrepancy: {cite}`screen2018consistency`
 
+- Debates on Mori et al. (2019): {cite}`mori2019reconciled`
+  - First Debate: {cite}`screen2019sea` and {cite}`mori2019reply`
+  - Second Debate: {cite}`zappa2021eurasian` and {cite}`mori2021reply`
+
+- Polar Vortex Categorization: {cite}`kretschmer2018more`
+
+- Linear Baroclinic Model
 
 [Python](https://www.python.org) is a general-purpose programming
 language conceived in 1989 by Dutch programmer [Guido van

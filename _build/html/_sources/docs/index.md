@@ -16,9 +16,10 @@ in attempt to understand the possible atmospheric circulation changes in respons
 The anticipated results will be compared to the observations and the state-of-the-art global climate model simulations, 
 for example CMIP5/6 or [Polar Amplification Model Intercomparison Project](https://www.cesm.ucar.edu/projects/CMIP6/PAMIP/). 
 
-Here are some useful online materials:
+Here are some useful and relevant online materials:
 -   [NSIDC Arctic sea ice news & analysis](https://nsidc.org/arcticseaicenews/)
     -   [Ch${arctic}$ interactive sea ice graph](https://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/)
+    -   [About the Cryosphere](https://nsidc.org/cryosphere/)
 -   [NOAA Arctic Report Card](https://arctic.noaa.gov/Report-Card)
     -   [Update for 2020](https://www.arctic.noaa.gov/Report-Card/Report-Card-2020)  
 -   [IPCC Special Report on the Ocean and Cryosphere in a Changing Climate](https://www.ipcc.ch/srocc)
