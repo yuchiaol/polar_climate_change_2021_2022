@@ -36,37 +36,35 @@ xxx and xxx
 
 Rapid polar climate change in the past decades was the dominant signature of anthropogenic global warming. This course aims to understand the polar climate change and its interaction with regional and global atmospheric circulations. The first part gives an overview of the fast-changing polar cryosphere and atmosphere, including sea ice, permafrost, snow, glaciers, and stratospheric polar vortex. Students will read IPCC’s Special Report on the Ocean and Cryosphere in a Changing Climate and present main conclusions. The second part discusses the two-way interactions of the polar climate change and lower-latitude (including mid-latitude and tropical) atmospheric and oceanic circulations at various spatial and temporal scales, with an emphasis on the cause and effect of Arctic Amplification. We will use a hierarchical modelling approach with different complexity in attempt to understand the potential atmospheric circulation changes in response to polar warming. The anticipated results will be compared to the observations and the state-of-the-art global climate model simulations, for example CMIP5/6 and Polar Amplification Model Intercomparison Project.
 
-## Course Objective
-This course aims to 1) understand the polar climate change and its interaction with regional and global atmospheric circulations, 2) cover some materials of Chapter 12 - Middle Atmosphere Dynamics - in Holton’s “An Introduction to Dynamic Meteorology”, and 3) train students to use simple atmospheric model to investigate Arctic-midlatitude connections. 
+## Course Objectives
+This course aims to 1) understand the polar climate change and its interaction with regional and global atmospheric circulations, 2) cover some materials of Chapter 12 - Middle Atmosphere Dynamics - in Holton’s “An Introduction to Dynamic Meteorology”, and 3) train students to use simple atmospheric models to investigate Arctic-midlatitude connections. 
 
 ## Course Requirements
 Willingness to lead discussion for reading materials and participate in group cooperation, and basic FORTRAN programing and plotting skills (Python preferred because we will use a machine learning package written in Python!). 
 
 ## Tentative Topics
 - Overview of Arctic
-  - Geography, Climatology and Meteorology
+  - Geography, climatology and meteorology
   - A case study for Siberian record-breaking warming
-  - Exploration
+  - Explorations
 
-- Permafrost
+- Snow and Permafrost
 
 - Glacier and Sea-level Rise
 
-- Snow
-
 - Sea Ice 
-  - Dynamics and Thermodynamics
-  - Modelling and Prediction
-  - Past, Recent, and Future Changes
+  - Dynamics and thermodynamics
+  - Modelling and prediction
+  - Past, recent, and future changes
 
 - Cause and Effect of Arctic Amplification
-  - Local vs Remote Impacts
-  - Mechanisms: Climate Forcing, Climate Feedbacks, and Poleward Energy Transport
-  - Debates on Arctic-midlatitude Linkages
+  - Local vs remote impacts
+  - Mechanisms: climate forcings, climate feedbacks, and poleward energy transport
+  - Debates on Arctic-midlatitude linkages
 
 - Polar Stratospheric circulation
-  - Polar Vortex and Stratospheric Sudden Warming
-  - Stratosphere-troposphere Coupling
+  - Polar vortex and stratospheric sudden warming
+  - Stratosphere-troposphere coupling
 
 ## Tentative Schedule
 
@@ -74,136 +72,29 @@ Willingness to lead discussion for reading materials and participate in group co
 - [IPCC Special Report on the Ocean and Cryosphere in a Changing Climate](https://www.ipcc.ch/srocc)
   - [Chapter 3 Polar Regions](https://www.ipcc.ch/srocc/chapter/chapter-3-2/)
 
+- [An Introduction to Dynamic Meteorology (2012), J. R. Holton and G. J. Hakim](https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660/ref=asc_df_0123848660/?tag=hyprod-20&linkCode=df0&hvadid=312091458201&hvpos=&hvnetw=g&hvrand=14614331955549249595&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003483&hvtargid=pla-465623449605&psc=1&tag=&ref=&adgrpid=63669393113&hvpone=&hvptwo=&hvadid=312091458201&hvpos=&hvnetw=g&hvrand=14614331955549249595&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003483&hvtargid=pla-465623449605)
+
 - Arctic Amplification and Feedbacks
   - Review Article: {cite}`goosse2018feedbacks`
   - Forcing Latitudes: {cite}`stuecker2018polar`
 
 - Arctic Amplification and Midlatitude Weather and Climate
-  - Review Article: {cite}`cohen2014arctic`
-  - Classic Paper: {cite}`francis2012arctic`
-  - Weakened Evidence: {cite}`blackport2020arctic`
-  - Model Consistency and Discrepancy: {cite}`screen2018consistency`
+  - Review article: {cite}`cohen2014arctic`
+  - Classic paper: {cite}`francis2012arctic`
+  - Weakened evidence: {cite}`blackport2020arctic`
+  - Model consistency and discrepancy: {cite}`screen2018consistency`
 
 - Debates on Mori et al. (2019): {cite}`mori2019reconciled`
-  - First Debate: {cite}`screen2019sea` and {cite}`mori2019reply`
-  - Second Debate: {cite}`zappa2021eurasian` and {cite}`mori2021reply`
+  - First debate: {cite}`screen2019sea` and {cite}`mori2019reply`
+  - Second debate: {cite}`zappa2021eurasian` and {cite}`mori2021reply`
 
-- Polar Vortex Categorization: {cite}`kretschmer2018more`
+- Polar vortex clustering: {cite}`kretschmer2018more`
 
 - Linear Baroclinic Model
-
-[Python](https://www.python.org) is a general-purpose programming
-language conceived in 1989 by Dutch programmer [Guido van
-Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum).
-
-Python is free and open source, with development coordinated through the
-[Python Software Foundation](https://www.python.org/psf/).
-
-Python has experienced rapid adoption in the last decade and is now one
-of the most commonly used programming languages.
-
-Popular textbooks on Python programming include {cite}`guttag2016introduction` and {cite}`hill2016learning`.
-
-### Common Uses
-
-Python is a general-purpose language used in almost all application domains
-such as
-
--   communications
--   web development
--   CGI and graphical user interfaces
--   game development
--   multimedia, data processing, security, etc., etc., etc.
-
-Python is beginner-friendly and routinely used to teach computer science and
-programming in top computer science programs.
-
-Python is particularly popular within the scientific and data science
-communities.
-
-It is steadily [replacing familiar tools like
-Excel](https://news.efinancialcareers.com/us-en/3002556/python-replaced-excel-banking)
-in the fields of finance and banking.
-
-### Relative Popularity
-
-The following chart, produced using Stack Overflow Trends, shows one
-measure of the relative popularity of Python
-
-```{figure} /_static/lecture_specific/about_py/python_vs_matlab.png
-:scale: 72%
-```
-
-The figure indicates not only that Python is widely used but also that
-adoption of Python has accelerated significantly since 2012.
-
-This is driven at least in part by uptake in the scientific
-domain, particularly in rapidly growing fields like data science.
-
-For example, the popularity of [pandas](http://pandas.pydata.org/), a
-library for data analysis with Python has exploded, as seen here.
-
-(The corresponding time path for MATLAB is shown for comparison)
-
-```{figure} /_static/lecture_specific/about_py/pandas_vs_matlab.png
-:scale: 23%
-```
-
-Note that pandas takes off in 2012, which is the same year that we see
-Python\'s popularity begin to spike in the first figure.
-
-Overall, it\'s clear that
-
--   Python is [one of the most popular programming languages worldwide](http://spectrum.ieee.org/computing/software/the-2017-top-programming-languages).
--   Python is a major tool for scientific computing, accounting for a
-    rapidly rising share of scientific work around the globe.
-
-### Features
-
-Python is a [high-level language](https://en.wikipedia.org/wiki/High-level_programming_language)
-suitable for rapid development.
-
-It has a relatively small core language supported by many libraries.
-
-Multiple programming styles are supported (procedural, object-oriented, functional, etc.)
-
-Python is interpreted rather than compiled.
-
-### Syntax and Design
-
-One nice feature of Python is its elegant syntax --- we\'ll see many
-examples later on.
-
-Elegant code might sound superfluous but in fact it\'s highly beneficial
-because it makes the syntax easy to read and easy to remember.
-
-Remembering how to read from files, sort dictionaries and other such
-routine tasks means that you don\'t need to break your flow in order to
-hunt down correct syntax.
-
-Closely related to elegant syntax is an elegant design.
-
-Features like iterators, generators, decorators and list comprehensions
-make Python highly expressive, allowing you to get more done with less
-code.
-
-[Namespaces](https://en.wikipedia.org/wiki/Namespace) improve
-productivity by cutting down on bugs and syntax errors.
-
-## Scientific Programming
-
-Python has become one of the core languages of scientific computing.
-
-It\'s either the dominant player or a major player in
-
--   [machine learning and data science](http://scikit-learn.org/stable/)
--   [astronomy](http://www.astropy.org/)
--   [artificial intelligence](https://wiki.python.org/moin/PythonForArtificialIntelligence)
--   [chemistry](http://chemlab.github.io/chemlab/)
--   [computational biology](http://biopython.org/wiki/Main_Page)
--   [meteorology](https://pypi.org/project/meteorology/)
-
-Its popularity in economics is also beginning to rise.
+  - Basics: {cite}`hoskins1981steady`
+  - Stationary wave response to tropical forcing: {cite}`ting1990stationary`
+  - Stationary wave response to midlatitude forcing: {cite}`ting1991stationary`
+  - Time integrations: {cite}`jin1995direct`
 
 ## Bibliography
 

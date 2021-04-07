@@ -133,7 +133,3 @@ It\'s either the dominant player or a major player in
 
 Its popularity in economics is also beginning to rise.
 
-## Bibliography
-
-```{bibliography} ../_bibliography/references.bib
-```

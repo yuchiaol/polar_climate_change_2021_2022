@@ -2,7 +2,7 @@
 - file: docs/index
   sections:
     - file: docs/syllabus
-    - file: docs/introduction
+    - file: docs/overview_arctic
 #    - file: docs/getting_started
 #    - file: docs/python_by_example
  #   - file: docs/learn_more

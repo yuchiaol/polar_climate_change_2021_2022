@@ -27,7 +27,7 @@ Here are some useful and relevant online materials:
 -   [Linear baroclinic model](https://ccsr.aori.u-tokyo.ac.jp/~lbm/sub/lbm_4.html)
     -   [Arctic forcing](https://littleyuchiao.wixsite.com/yuchiaol/animation-arctic) vs [Tropical forcing](https://littleyuchiao.wixsite.com/yuchiaol/animations)  
 -   [Climate ebook](http://www.climate.be/textbook/contents.html)
--   Current Research and Monitoring of Troposphere-Stratosphere Dynamics & Chemistry
+-   Troposphere-Stratosphere Dynamics and Monitoring
     -   [NCEP/CPC Stratosphere-Troposphere Monitoring](http://www.cpc.ncep.noaa.gov/products/stratosphere/strat-trop/)
     -   [NOAA/ESRL EP Flux Plotting Page](http://www.esrl.noaa.gov/psd/data/epflux/)
     -   [NASA MERRA Stratospheric Analysis](http://acdb-ext.gsfc.nasa.gov/Data_services/met/ann_data.html)
