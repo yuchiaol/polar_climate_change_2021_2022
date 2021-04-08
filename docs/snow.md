@@ -11,9 +11,7 @@ kernelspec:
 
 (about_py)=
 
-# Snow and Permafrost
-
-## Snow
+# Snow
 
 ## Snow Characteristics
 
@@ -74,8 +72,10 @@ kernelspec:
 March snow water equivalent and its trend (per decade). Source: [Pullianinen et al. (2020)](https://www.nature.com/articles/s41586-020-2258-0?WT.ec_id=NATURE-20200521&utm_source=nature_etoc&utm_medium=email&utm_campaign=20200521&sap-outbound-id=D5CFB82319EA9147647EAB1590572376176446DE)
 ```
 
-## Permafrost
+## Sources
 
+- [Snowmelt Processes](http://ftp.comet.ucar.edu/memory-stick/hydro/basic_int/snowmelt/index.htm)
+- [NSIDC All About Snow](https://nsidc.org/cryosphere/snow)
 
 
 

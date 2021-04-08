@@ -3,7 +3,8 @@
   sections:
     - file: docs/syllabus
     - file: docs/overview_arctic
-    - file: docs/snow_permafrost
+    - file: docs/snow
+    - file: docs/permafrost
 #    - file: docs/getting_started
 #    - file: docs/python_by_example
  #   - file: docs/learn_more

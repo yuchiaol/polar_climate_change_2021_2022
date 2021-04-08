@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Polar Climate Change &#8212; Polar Climate Change</title>
+    <title>Permafrost &#8212; Polar Climate Change</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -57,7 +57,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Syllabus" href="syllabus.html" />
+    <link rel="prev" title="Snow" href="snow.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -87,7 +87,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+    <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="syllabus.html">
    Syllabus
@@ -103,8 +103,8 @@
    Snow
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="permafrost.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Permafrost
   </a>
  </li>
@@ -146,9 +146,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/docs/permafrost.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/index.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/permafrost.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -168,11 +171,78 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/mini_book/docs/permafrost.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#froen-ground-vs-permafrost">
+   Froen Ground vs Permafrost
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#permafrost-zones">
+   Permafrost Zones
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frozen-seafloor-subsea-permafrost">
+   Frozen Seafloor: Subsea Permafrost
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#factors-affect-permafrost">
+   Factors Affect Permafrost
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#thawing-permafrost-and-climate-change">
+   Thawing Permafrost and Climate Change
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#biological-and-human-ctivities-and-permafrost">
+   Biological And Human ctivities and Permafrost
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#permafrost-and-carbon-cycle">
+   Permafrost and Carbon Cycle
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sources">
+   Sources
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -181,68 +251,64 @@
         
               <div>
                 
-  <div class="section" id="polar-climate-change">
-<h1>Polar Climate Change<a class="headerlink" href="#polar-climate-change" title="Permalink to this headline">¶</a></h1>
-<p>These materials are suppporting lectures of Polar Climate Change in 2021/22 semester
-for upper-year undergraduate and graduate students at the <a class="reference external" href="http://www.as.ntu.edu.tw/index.php/eng">Department of Atmospheric Sciences</a>,
-<a class="reference external" href="https://www.ntu.edu.tw/english/">National Taiwan University</a>,
-written by <a class="reference external" href="https://littleyuchiao.wixsite.com/yuchiaol/">Yu-Chiao Liang</a>.</p>
-<p>This course aims to introduce the Arctic climate change and its interaction with regional and global climate.
-We will overview the fast-changing polar cryosphere in the past decades,
-and discuss the two-way interactions of the changing Arctic climate and
-lower-latitude atmospheric and oceanic circulations at various spatiotemporal scales,
-along with cause-and-effect and signal-to-noise issues addressed.</p>
-<p>We will use an idealized modelling approach
-in attempt to understand the possible atmospheric circulation changes in response to polar warming.
-The anticipated results will be compared to the observations and the state-of-the-art global climate model simulations,
-for example CMIP5/6 or <a class="reference external" href="https://www.cesm.ucar.edu/projects/CMIP6/PAMIP/">Polar Amplification Model Intercomparison Project</a>.</p>
-<p>Here are some useful and relevant online materials:</p>
+  <div class="section" id="permafrost">
+<span id="about-py"></span><h1>Permafrost<a class="headerlink" href="#permafrost" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="froen-ground-vs-permafrost">
+<h2>Froen Ground vs Permafrost<a class="headerlink" href="#froen-ground-vs-permafrost" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://nsidc.org/arcticseaicenews/">NSIDC Arctic sea ice news &amp; analysis</a></p>
-<ul>
-<li><p><a class="reference external" href="https://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/">Ch<span class="math notranslate nohighlight">\({arctic}\)</span> interactive sea ice graph</a></p></li>
-<li><p><a class="reference external" href="https://nsidc.org/cryosphere/">About the Cryosphere</a></p></li>
+<li><p>Seasonally frozen ground: freezes more than 15 days per year (<a class="reference external" href="https://www.youtube.com/watch?v=8apXOwq5Nwg">The Ice Bowl</a>)</p></li>
+<li><p>Permafrost (permanently frozen ground): &lt;= 0°C for at least 2 years (not necessary having water or ice!)</p></li>
 </ul>
-</li>
-<li><p><a class="reference external" href="https://arctic.noaa.gov/Report-Card">NOAA Arctic Report Card</a></p>
-<ul>
-<li><p><a class="reference external" href="https://www.arctic.noaa.gov/Report-Card/Report-Card-2020">Update for 2020</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://www.ipcc.ch/srocc">IPCC Special Report on the Ocean and Cryosphere in a Changing Climate</a></p>
-<ul>
-<li><p><a class="reference external" href="https://www.ipcc.ch/srocc/chapter/chapter-3-2/">Chapter 3 Polar Regions</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://ccsr.aori.u-tokyo.ac.jp/~lbm/sub/lbm_4.html">Linear baroclinic model</a></p>
-<ul>
-<li><p><a class="reference external" href="https://littleyuchiao.wixsite.com/yuchiaol/animation-arctic">Arctic forcing</a> vs <a class="reference external" href="https://littleyuchiao.wixsite.com/yuchiaol/animations">Tropical forcing</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="http://www.climate.be/textbook/contents.html">Climate ebook</a></p></li>
-<li><p>Troposphere-Stratosphere Dynamics and Monitoring</p>
-<ul>
-<li><p><a class="reference external" href="http://www.cpc.ncep.noaa.gov/products/stratosphere/strat-trop/">NCEP/CPC Stratosphere-Troposphere Monitoring</a></p></li>
-<li><p><a class="reference external" href="http://www.esrl.noaa.gov/psd/data/epflux/">NOAA/ESRL EP Flux Plotting Page</a></p></li>
-<li><p><a class="reference external" href="http://acdb-ext.gsfc.nasa.gov/Data_services/met/ann_data.html">NASA MERRA Stratospheric Analysis</a></p></li>
-<li><p><a class="reference external" href="http://ds.data.jma.go.jp/tcc/tcc/products/clisys/STRAT/">JMA Stratospheric Circulation Monitoring</a></p></li>
-<li><p><a class="reference external" href="http://www.pa.op.dlr.de/arctic/ecmwf.php">ECMWF Stratospheric Analysis from A. Dörnbrack</a></p></li>
-<li><p><a class="reference external" href="http://www.geo.fu-berlin.de/en/met/ag/strat/produkte/index.html">The Freie Universität Berlin Middle Atmosphere Products</a></p></li>
-<li><p><a class="reference external" href="http://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/teleconnections.shtml">NCEP CPC Teleconnections</a></p></li>
-<li><p><a class="reference external" href="https://stratobserve.com/">Zachary D. Lawrence’s Real-time Stratospheric Forecasts</a></p></li>
-</ul>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>These lectures were built using the new Sphinx-based <a class="reference external" href="https://beta.jupyterbook.org/intro.html">Jupyter Book
-2.0</a> tool set, as part of the
-<a class="reference external" href="https://ebp.jupyterbook.org/en/latest/">ExecutableBookProject</a>.  They are
-intended mainly as a demonstration of these tools.
-Instructions for how to build them from source can be found in the Jupyter
-Book documentation.</p>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="permafrost-zones">
+<h2>Permafrost Zones<a class="headerlink" href="#permafrost-zones" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-left" id="id1">
+<a class="reference internal image-reference" href="../_images/permafrost_map.png"><img alt="../_images/permafrost_map.png" src="../_images/permafrost_map.png" style="width: 888.8000000000001px; height: 638.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Permafrost zones and locations for CO2 and methane flux measurements collected with eddy covariance (yellow) and chambers (blue). Source: <a class="reference external" href="https://eos.org/science-updates/is-the-northern-permafrost-zone-a-source-or-a-sink-for-carbon">EOS</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="frozen-seafloor-subsea-permafrost">
+<h2>Frozen Seafloor: Subsea Permafrost<a class="headerlink" href="#frozen-seafloor-subsea-permafrost" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="factors-affect-permafrost">
+<h2>Factors Affect Permafrost<a class="headerlink" href="#factors-affect-permafrost" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Diurnal cycle</p></li>
+<li><p>Seasonal cycle</p></li>
+<li><p>Geographic location</p></li>
+<li><p>Elevation</p></li>
+<li><p>Landscape: snow (insulator), soil type, peat, plants (evergreen trees)</p></li>
+<li><p>Slope</p></li>
+<li><p>Lakes and rivers: heat source, talik</p></li>
+<li><p>Radiation</p></li>
+</ul>
+</div>
+<div class="section" id="thawing-permafrost-and-climate-change">
+<h2>Thawing Permafrost and Climate Change<a class="headerlink" href="#thawing-permafrost-and-climate-change" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Air temperature</p></li>
+<li><p>Moisture</p></li>
+<li><p>Active layer</p></li>
+<li><p>Lakes</p></li>
+<li><p>Ecosystem</p></li>
+<li><p>Sea level</p></li>
+</ul>
+</div>
+<div class="section" id="biological-and-human-ctivities-and-permafrost">
+<h2>Biological And Human ctivities and Permafrost<a class="headerlink" href="#biological-and-human-ctivities-and-permafrost" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="permafrost-and-carbon-cycle">
+<h2>Permafrost and Carbon Cycle<a class="headerlink" href="#permafrost-and-carbon-cycle" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Carbon dioxide</p></li>
+<li><p>Methane</p></li>
+</ul>
+</div>
+<div class="section" id="sources">
+<h2>Sources<a class="headerlink" href="#sources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nsidc.org/cryosphere/frozenground/index.html">NSIDC All About Frozen Ground</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -271,7 +337,7 @@ Book documentation.</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="syllabus.html" title="next page">Syllabus</a>
+    <a class='left-prev' id="prev-link" href="snow.html" title="previous page">Snow</a>
 
         </div>
         
