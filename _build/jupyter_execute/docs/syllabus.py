@@ -22,13 +22,13 @@ xxx and xxx
 
 ## Grading
 - Leading discussion: 
-  - IPCC’s Special Report (group presentation 10%)
-  - Assigned literature (group presentation 10%))
+  - IPCC’s Special Report (group presentation 15%)
+  - Assigned literature (group presentation 15%))
 - NSIDC sea-ice data illustration (individual homework assignment 10%)
-- Polar vortex and machine learning applications (individual assignment 10%)
-- Linear baroclinic model project (individual assignment 15%, group presentation 15%)
+- Polar vortex and machine learning applications (individual homework assignment 10%)
+- Linear baroclinic model project (individual homework assignment 15%)
 - Final project (group presentation 30%)
-- Additional credit
+- Additional credit (5%)
 
 ## Course Description
 
