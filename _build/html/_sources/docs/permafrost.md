@@ -50,7 +50,7 @@ Permafrost zones and locations for CO2 and methane flux measurements collected w
 - Ecosystem
 - Sea level
 
-## Biological And Human ctivities and Permafrost
+## Biological and Human Activities and Permafrost
 
 ## Permafrost and Carbon Cycle
 

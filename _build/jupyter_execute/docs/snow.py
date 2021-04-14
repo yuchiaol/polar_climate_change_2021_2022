@@ -18,7 +18,7 @@
 
 - Daytime temperature inversion
 
-## Snow Water Equavalent
+## Snow Water Equivalent
 
 - Definition: the thickness of water that would result from melting a given layer of snow.
 - 25 cm of fresh snow ~= 0.25-10 cm of water.
