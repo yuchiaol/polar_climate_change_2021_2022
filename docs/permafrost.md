@@ -13,7 +13,7 @@ kernelspec:
 
 # Permafrost
 
-## Froen Ground vs Permafrost
+## Frozen Ground vs Permafrost
 
 - Seasonally frozen ground: freezes more than 15 days per year ([The Ice Bowl](https://www.youtube.com/watch?v=8apXOwq5Nwg))
 - Permafrost (permanently frozen ground): <= 0°C for at least 2 years (not necessary having water or ice!)
