@@ -2,6 +2,8 @@
 
 # Sea Ice
 
+> Sea-ice data illustration (individual homework assignment 10%. See more details here).
+
 ## What is sea ice?
 
 - Sea ice is formed in the salty ocean water (-1.8°C)
@@ -76,22 +78,67 @@
 
 ## Sea Ice Gridded Data
 
+- Sea-ice concentration (SIC):
+  - the amount of area covered by sea ice within one grid relative to some reference area
+  - 0-1 to 0-100%, unitless
+- Sea-ice area (SIA):
+  - total area covered by sea ice -> area size times sea-ice concentration
+  - unit in km^2 or mile^2
+- Sea-ice extent (SIE):
+  - having sea ice or no sea ice in one grid -> 0 or 1
+  - threshold: sea-ice concentration 15%
+  - always larger than sea-ice area
+  - unitless or unit in km^2 or mile^2
+- Sea-ice thickness (SIT): 
+  - freeboard 
+  - draft
+  - unit in meter
+  
+## Arctic Field Study
 
-## Glacier Retreat and Sea Level Rise
+- Not much reliable sea ice records before 1979.
+- Russian has the most sea-ice records, but when Soviet Union collapsed there’s no funding to sustain.
+- Beginning in September 2019, the Multidisciplinary drifting Observatory for the Study of Arctic Climate (MOSAiC) expedition sent the German research icebreaker Polarstern to the Arctic to spend a year trapped in sea ice. 
 
-- [Glacier retreat](https://www.youtube.com/watch?time_continue=7&v=E4Zc_KuXMkA&feature=emb_logo)
+## Remote Sensing Measurements
 
-```{figure} /_static/lecture_specific/figures/glacier_retreat.jpeg
-:scale: 55%
-The retreat of Breiðamerkurjökull and growth of Jökulsárlón glacial lake. Source: Glaciological Group of the Institute of Earth Sciences of University of Iceland.
-```
+- Visible
+- Infrared
+- Passive microwave
+- Active microwave
 
-```{figure} /_static/lecture_specific/figures/glaciers_slr.jpeg
-:scale: 55%
-Global sea level rise. Source: [Björnsson et al. (2018)](https://www.vatnajokulsthjodgardur.is/en/areas/melting-glaciers/glaciers-and-climate-change/references)
-```
+## Sea-Ice Modelling
+
+- [CESM tutorial](https://www.cesm.ucar.edu/events/tutorials/2019/videos/2019_CESM_tutorial_alice_duvivier.mp4)
+
+## Sea-ice Prediction
+
+- [Sea Ice Prediction Network](https://www.arcus.org/sipn)
+- Methods:
+  - heuristic model
+  - statistical framework
+  - dynamical framework
+  - deep learning framework
+- Source of predictability:
+  - sea-ice reemergence
+  - atmospheric precursor
+  - oceanic precursor
+  - sea ice itself (?)
+
+## Changing Sea Ice in Arctic and Antarctica
+
+- September Arctic sea ice
+  - Arctic sea ice melt and freeze day
+  - Riverine impact on Arctic sea ice
+- February Antarctica Sea Ice
+  - Increase rather than decrease under global warming
+- Sea Ice in the future
+
+## Sea Ice Geoengineering and Management 
+
 
 ## Sources
 
 - [NSIDC All About Sea Ice](https://nsidc.org/cryosphere/seaice/index.html)
 - [NSIDC Arctic sea ice news & analysis](https://nsidc.org/arcticseaicenews/)
+- [NCAR CESM tutorial lecture: Extremes in the Arctic](http://www.cesm.ucar.edu/events/tutorials/2020/coursework.html)

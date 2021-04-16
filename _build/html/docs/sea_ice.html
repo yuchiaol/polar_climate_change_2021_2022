@@ -57,6 +57,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="HW Sea-ice Data Illustration" href="hw_sea_ice.html" />
     <link rel="prev" title="Glaciers" href="glaciers.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -116,6 +117,16 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Sea Ice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="hw_sea_ice.html">
+   HW Sea-ice Data Illustration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="hw_polar_vortex.html">
+   HW Polar vortex and machine learning
   </a>
  </li>
 </ul>
@@ -255,8 +266,33 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#glacier-retreat-and-sea-level-rise">
-   Glacier Retreat and Sea Level Rise
+  <a class="reference internal nav-link" href="#arctic-field-study">
+   Arctic Field Study
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#remote-sensing-measurements">
+   Remote Sensing Measurements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sea-ice-modelling">
+   Sea-Ice Modelling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sea-ice-prediction">
+   Sea-ice Prediction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changing-sea-ice-in-arctic-and-antarctica">
+   Changing Sea Ice in Arctic and Antarctica
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sea-ice-geoengineering-and-management">
+   Sea Ice Geoengineering and Management
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -278,6 +314,9 @@
                 
   <div class="section" id="sea-ice">
 <span id="about-py"></span><h1>Sea Ice<a class="headerlink" href="#sea-ice" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Sea-ice data illustration (individual homework assignment 10%. See more details here).</p>
+</div></blockquote>
 <div class="section" id="what-is-sea-ice">
 <h2>What is sea ice?<a class="headerlink" href="#what-is-sea-ice" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -380,26 +419,107 @@
 </div>
 <div class="section" id="sea-ice-gridded-data">
 <h2>Sea Ice Gridded Data<a class="headerlink" href="#sea-ice-gridded-data" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="glacier-retreat-and-sea-level-rise">
-<h2>Glacier Retreat and Sea Level Rise<a class="headerlink" href="#glacier-retreat-and-sea-level-rise" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.youtube.com/watch?time_continue=7&amp;v=E4Zc_KuXMkA&amp;feature=emb_logo">Glacier retreat</a></p></li>
+<li><p>Sea-ice concentration (SIC):</p>
+<ul>
+<li><p>the amount of area covered by sea ice within one grid relative to some reference area</p></li>
+<li><p>0-1 to 0-100%, unitless</p></li>
 </ul>
-<div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/glacier_retreat.jpeg"><img alt="../_images/glacier_retreat.jpeg" src="../_images/glacier_retreat.jpeg" style="width: 1056.0px; height: 713.9000000000001px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">The retreat of Breiðamerkurjökull and growth of Jökulsárlón glacial lake. Source: Glaciological Group of the Institute of Earth Sciences of University of Iceland.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</li>
+<li><p>Sea-ice area (SIA):</p>
+<ul>
+<li><p>total area covered by sea ice -&gt; area size times sea-ice concentration</p></li>
+<li><p>unit in km^2 or mile^2</p></li>
+</ul>
+</li>
+<li><p>Sea-ice extent (SIE):</p>
+<ul>
+<li><p>having sea ice or no sea ice in one grid -&gt; 0 or 1</p></li>
+<li><p>threshold: sea-ice concentration 15%</p></li>
+<li><p>always larger than sea-ice area</p></li>
+<li><p>unitless or unit in km^2 or mile^2</p></li>
+</ul>
+</li>
+<li><p>Sea-ice thickness (SIT):</p>
+<ul>
+<li><p>freeboard</p></li>
+<li><p>draft</p></li>
+<li><p>unit in meter</p></li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="figure align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/glaciers_slr.jpeg"><img alt="../_images/glaciers_slr.jpeg" src="../_images/glaciers_slr.jpeg" style="width: 803.0000000000001px; height: 602.25px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Global sea level rise. Source: <a class="reference external" href="https://www.vatnajokulsthjodgardur.is/en/areas/melting-glaciers/glaciers-and-climate-change/references">Björnsson et al. (2018)</a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<div class="section" id="arctic-field-study">
+<h2>Arctic Field Study<a class="headerlink" href="#arctic-field-study" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Not much reliable sea ice records before 1979.</p></li>
+<li><p>Russian has the most sea-ice records, but when Soviet Union collapsed there’s no funding to sustain.</p></li>
+<li><p>Beginning in September 2019, the Multidisciplinary drifting Observatory for the Study of Arctic Climate (MOSAiC) expedition sent the German research icebreaker Polarstern to the Arctic to spend a year trapped in sea ice.</p></li>
+</ul>
 </div>
+<div class="section" id="remote-sensing-measurements">
+<h2>Remote Sensing Measurements<a class="headerlink" href="#remote-sensing-measurements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Visible</p></li>
+<li><p>Infrared</p></li>
+<li><p>Passive microwave</p></li>
+<li><p>Active microwave</p></li>
+</ul>
+</div>
+<div class="section" id="sea-ice-modelling">
+<h2>Sea-Ice Modelling<a class="headerlink" href="#sea-ice-modelling" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.cesm.ucar.edu/events/tutorials/2019/videos/2019_CESM_tutorial_alice_duvivier.mp4">CESM tutorial</a></p></li>
+</ul>
+</div>
+<div class="section" id="sea-ice-prediction">
+<h2>Sea-ice Prediction<a class="headerlink" href="#sea-ice-prediction" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.arcus.org/sipn">Sea Ice Prediction Network</a></p></li>
+<li><p>Methods:</p>
+<ul>
+<li><p>heuristic model</p></li>
+<li><p>statistical framework</p></li>
+<li><p>dynamical framework</p></li>
+<li><p>deep learning framework</p></li>
+</ul>
+</li>
+<li><p>Source of predictability:</p>
+<ul>
+<li><p>sea-ice reemergence</p></li>
+<li><p>atmospheric precursor</p></li>
+<li><p>oceanic precursor</p></li>
+<li><p>sea ice itself (?)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="changing-sea-ice-in-arctic-and-antarctica">
+<h2>Changing Sea Ice in Arctic and Antarctica<a class="headerlink" href="#changing-sea-ice-in-arctic-and-antarctica" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>September Arctic sea ice</p>
+<ul>
+<li><p>Arctic sea ice melt and freeze day</p></li>
+<li><p>Riverine impact on Arctic sea ice</p></li>
+</ul>
+</li>
+<li><p>February Antarctica Sea Ice</p>
+<ul>
+<li><p>Increase rather than decrease under global warming</p></li>
+</ul>
+</li>
+<li><p>Sea Ice in the future</p></li>
+</ul>
+</div>
+<div class="section" id="sea-ice-geoengineering-and-management">
+<h2>Sea Ice Geoengineering and Management<a class="headerlink" href="#sea-ice-geoengineering-and-management" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="sources">
 <h2>Sources<a class="headerlink" href="#sources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://nsidc.org/cryosphere/seaice/index.html">NSIDC All About Sea Ice</a></p></li>
 <li><p><a class="reference external" href="https://nsidc.org/arcticseaicenews/">NSIDC Arctic sea ice news &amp; analysis</a></p></li>
+<li><p><a class="reference external" href="http://www.cesm.ucar.edu/events/tutorials/2020/coursework.html">NCAR CESM tutorial lecture: Extremes in the Arctic</a></p></li>
 </ul>
 </div>
 </div>
@@ -430,6 +550,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="glaciers.html" title="previous page">Glaciers</a>
+    <a class='right-next' id="next-link" href="hw_sea_ice.html" title="next page">HW Sea-ice Data Illustration</a>
 
         </div>
         
