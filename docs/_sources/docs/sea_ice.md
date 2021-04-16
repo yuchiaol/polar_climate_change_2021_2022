@@ -13,7 +13,7 @@ kernelspec:
 
 # Sea Ice
 
-> Sea-ice data illustration (individual homework assignment 10%. See more details here).
+> Sea-ice data illustration: individual homework assignment 10%. See more details [here](https://yuchiaol.github.io/polar_climate_change_2021_2022/docs/hw_sea_ice.html).
 
 ## What is sea ice?
 
@@ -144,6 +144,7 @@ kernelspec:
 - February Antarctica Sea Ice
   - Increase rather than decrease under global warming
 - Sea Ice in the future
+- [NASA Visualization Explorer](https://nasaviz.gsfc.nasa.gov/cgi-bin/details.cgi?aid=12734)
 
 ## Sea Ice Geoengineering and Management 
 
