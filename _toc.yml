@@ -7,8 +7,6 @@
     - file: docs/permafrost
     - file: docs/glaciers
     - file: docs/sea_ice
+    - file: docs/hw_lbm
     - file: docs/hw_sea_ice
     - file: docs/hw_polar_vortex
-#    - file: docs/getting_started
-#    - file: docs/python_by_example
- #   - file: docs/learn_more

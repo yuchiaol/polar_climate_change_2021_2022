@@ -13,7 +13,7 @@ kernelspec:
 
 # HW Polar Vortex & Machine Learning
 
-## Individual work
+## Individual Work
 
 ## Credits: 10%
 
