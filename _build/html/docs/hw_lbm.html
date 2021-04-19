@@ -261,6 +261,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ctl-file-example">
+   CTL File Example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tropical-forcing-example">
    Tropical Forcing Example
   </a>
@@ -314,11 +319,12 @@
 <li><p>Reproduce the Central Pacific forcing.</p></li>
 <li><p>Check:</p>
 <ul>
-<li><p>Background fields.</p></li>
+<li><p>Background fields and forcings.</p></li>
 <li><p>Winds, sea-level pressure, geopotential height, temperature fields.</p></li>
 </ul>
 </li>
 <li><p>Use diagnostic tools to analyze the wave activity features.</p></li>
+<li><p>Group work will be to modify Arctic forcing. For example, you can move the tropical forcing to Arctic region.</p></li>
 </ul>
 </div>
 <div class="section" id="the-model">
@@ -329,6 +335,86 @@ I have ported LBM on workstation xxx. Please ask your group leaders for login in
 </div>
 <div class="section" id="running-the-model">
 <h2>Running the Model<a class="headerlink" href="#running-the-model" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Copy folder LBM_standard to your own directory.</p></li>
+<li><p>export LNHOME=’/home/xxx/LBM_xxx/ln_solver’</p></li>
+<li><p>Edit Lmake.inc file</p></li>
+<li><p>Compile model:</p>
+<ul class="simple">
+<li><p>cd $LNHOME/model/src</p></li>
+<li><p>make clean</p></li>
+<li><p>make lib</p></li>
+<li><p>You should find a file called liblbm2t21ml11c.a under $LNHOME/model/lib/linux/</p></li>
+</ul>
+</li>
+<li><p>Builde model:</p>
+<ul class="simple">
+<li><p>cd $LNHOME/model/src</p></li>
+<li><p>make clean.special</p></li>
+<li><p>make lbm</p></li>
+<li><p>You should find a file called lbm2.t21ml11ctintgr under $LNHOME/model/bin/linux</p></li>
+</ul>
+</li>
+<li><p>Prepare forcing:</p>
+<ul class="simple">
+<li><p>cd $LNHOME/solver/util</p></li>
+<li><p>Edit SETPAR</p></li>
+<li><p>make clean</p></li>
+<li><p>make</p></li>
+<li><p>./mkfrcng</p></li>
+<li><p>cd $LNHOME/sample/</p></li>
+<li><p>You should see the forcing file you created.</p></li>
+<li><p>Use Grads to check forcing (e.g., (1) edit xxx.ctl, (2) type grads, (3) open xxx.ctl, (4) d t)</p></li>
+</ul>
+</li>
+<li><p>Run model:</p>
+<ul class="simple">
+<li><p>cd $LNHOME/model/sh/tintgr</p></li>
+<li><p>Edit xxx.csh (e.g., linear-run.t21l5.test.csh)</p></li>
+<li><p>./xxx.csh</p></li>
+<li><p>Monitor output log file under $LNHOME/data/out</p></li>
+</ul>
+</li>
+<li><p>Postprocess and visualize results</p>
+<ul class="simple">
+<li><p>cd $LNHOME/solver/util</p></li>
+<li><p>Edit SETPAR</p></li>
+<li><p>./gt2gr</p></li>
+<li><p>Convert grd file to nc file: cdo -f nc import_binary xxx.ctl output_temp.nc</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="ctl-file-example">
+<h2>CTL File Example<a class="headerlink" href="#ctl-file-example" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">sample</span> <span class="n">file</span> <span class="n">fot</span> <span class="n">products</span> <span class="n">of</span> <span class="n">a</span> <span class="n">linear</span> <span class="n">integration</span>
+<span class="n">DSET</span> <span class="o">^</span><span class="n">linear</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">grd</span>
+<span class="n">OPTIONS</span> <span class="n">SEQUENTIAL</span> <span class="n">YREV</span> <span class="n">BIG_ENDIAN</span>
+<span class="n">TITLE</span> <span class="n">time</span><span class="o">-</span><span class="n">integration</span>
+<span class="n">UNDEF</span> <span class="o">-</span><span class="mf">999.</span>
+<span class="n">XDEF</span> <span class="mi">64</span> <span class="n">LINEAR</span> <span class="mf">0.</span> <span class="mf">5.625</span>
+<span class="n">YDEF</span> <span class="mi">32</span> <span class="n">LEVELS</span> <span class="o">-</span><span class="mf">85.761</span> <span class="o">-</span><span class="mf">80.269</span> <span class="o">-</span><span class="mf">74.745</span> <span class="o">-</span><span class="mf">69.213</span> <span class="o">-</span><span class="mf">63.679</span> <span class="o">-</span><span class="mf">58.143</span> <span class="o">-</span><span class="mf">52.607</span>
+<span class="o">-</span><span class="mf">47.070</span> <span class="o">-</span><span class="mf">41.532</span> <span class="o">-</span><span class="mf">35.995</span> <span class="o">-</span><span class="mf">30.458</span> <span class="o">-</span><span class="mf">24.920</span> <span class="o">-</span><span class="mf">19.382</span> <span class="o">-</span><span class="mf">13.844</span> <span class="o">-</span><span class="mf">8.3067</span> <span class="o">-</span><span class="mf">2.7689</span>
+<span class="mf">2.7689</span> <span class="mf">8.3067</span> <span class="mf">13.844</span> <span class="mf">19.382</span> <span class="mf">24.920</span> <span class="mf">30.458</span> <span class="mf">35.995</span> <span class="mf">41.532</span> <span class="mf">47.070</span> <span class="mf">52.607</span>
+<span class="mf">58.143</span> <span class="mf">63.679</span> <span class="mf">69.213</span> <span class="mf">74.745</span> <span class="mf">80.269</span> <span class="mf">85.761</span>
+<span class="n">ZDEF</span> <span class="mi">11</span>  <span class="n">LEVELS</span> <span class="mi">1000</span> <span class="mi">950</span> <span class="mi">900</span> <span class="mi">850</span> <span class="mi">700</span> <span class="mi">500</span> <span class="mi">300</span> <span class="mi">200</span> <span class="mi">100</span> <span class="mi">30</span> <span class="mi">10</span>
+<span class="n">TDEF</span> <span class="mi">60</span> <span class="n">LINEAR</span> <span class="mi">01</span><span class="n">jan0000</span> <span class="mi">1</span><span class="n">dy</span>
+<span class="n">VARS</span> <span class="mi">8</span>
+<span class="n">psi</span>    <span class="mi">11</span> <span class="mi">99</span> <span class="n">stream</span> <span class="n">function</span>     <span class="p">[</span><span class="n">m</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">s</span><span class="p">]</span>
+<span class="n">chi</span>    <span class="mi">11</span> <span class="mi">99</span> <span class="n">velocity</span> <span class="n">potential</span>  <span class="p">[</span><span class="n">m</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">s</span><span class="p">]</span>
+<span class="n">u</span>      <span class="mi">11</span> <span class="mi">99</span> <span class="n">zonal</span> <span class="n">wind</span>          <span class="p">[</span><span class="n">m</span><span class="o">/</span><span class="n">s</span><span class="p">]</span>
+<span class="n">v</span>      <span class="mi">11</span> <span class="mi">99</span> <span class="n">meridional</span> <span class="n">wind</span>     <span class="p">[</span><span class="n">m</span><span class="o">/</span><span class="n">s</span><span class="p">]</span>
+<span class="n">w</span>      <span class="mi">11</span> <span class="mi">99</span> <span class="n">p</span><span class="o">-</span><span class="n">vertical</span> <span class="n">velocity</span> <span class="p">[</span><span class="n">hPa</span><span class="o">/</span><span class="n">s</span><span class="p">]</span>
+<span class="n">t</span>      <span class="mi">11</span> <span class="mi">99</span> <span class="n">temperature</span>         <span class="p">[</span><span class="n">K</span><span class="p">]</span>
+<span class="n">z</span>      <span class="mi">11</span> <span class="mi">99</span> <span class="n">geopotential</span> <span class="n">height</span> <span class="p">[</span><span class="n">m</span><span class="p">]</span>
+<span class="n">p</span>       <span class="mi">1</span> <span class="mi">99</span> <span class="n">surface</span> <span class="n">pressure</span>    <span class="p">[</span><span class="n">hPa</span><span class="p">]</span>
+<span class="n">ENDVARS</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="tropical-forcing-example">
 <h2>Tropical Forcing Example<a class="headerlink" href="#tropical-forcing-example" title="Permalink to this headline">¶</a></h2>
@@ -353,7 +439,7 @@ I have ported LBM on workstation xxx. Please ask your group leaders for login in
 </li>
 <li><p>Rossby Wave Source</p>
 <ul>
-<li><p>[Python] (<a class="reference external" href="https://ajdawson.github.io/windspharm/latest/examples/rws_standard.html">https://ajdawson.github.io/windspharm/latest/examples/rws_standard.html</a>)</p></li>
+<li><p><a class="reference external" href="https://ajdawson.github.io/windspharm/latest/examples/rws_standard.html">Python</a></p></li>
 </ul>
 </li>
 <li><p>Streamfunction and Velocity Potential</p>

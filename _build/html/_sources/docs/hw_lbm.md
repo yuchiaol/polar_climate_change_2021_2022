@@ -30,9 +30,10 @@ kernelspec:
 - Learn how to change forcing strength, shape, and location.
 - Reproduce the Central Pacific forcing.
 - Check:
-  - Background fields.
+  - Background fields and forcings.
   - Winds, sea-level pressure, geopotential height, temperature fields.
 - Use diagnostic tools to analyze the wave activity features.
+- Group work will be to modify Arctic forcing. For example, you can move the tropical forcing to Arctic region.
 
 ## The Model
 
@@ -41,6 +42,66 @@ The official website is [here](https://ccsr.aori.u-tokyo.ac.jp/~lbm/sub/lbm_4.ht
 I have ported LBM on workstation xxx. Please ask your group leaders for login information.
 
 ## Running the Model
+
+1. Copy folder LBM_standard to your own directory.
+2. export LNHOME='/home/xxx/LBM_xxx/ln_solver'
+3. Edit Lmake.inc file
+4. Compile model:
+   - cd $LNHOME/model/src
+   - make clean
+   - make lib 
+   - You should find a file called liblbm2t21ml11c.a under $LNHOME/model/lib/linux/
+5. Builde model:
+   - cd $LNHOME/model/src 
+   - make clean.special
+   - make lbm
+   - You should find a file called lbm2.t21ml11ctintgr under $LNHOME/model/bin/linux
+6. Prepare forcing:
+   - cd $LNHOME/solver/util
+   - Edit SETPAR
+   - make clean
+   - make
+   - ./mkfrcng
+   - cd $LNHOME/sample/
+   - You should see the forcing file you created.
+   - Use Grads to check forcing (e.g., (1) edit xxx.ctl, (2) type grads, (3) open xxx.ctl, (4) d t)
+7. Run model:
+   - cd $LNHOME/model/sh/tintgr
+   - Edit xxx.csh (e.g., linear-run.t21l5.test.csh)
+   - ./xxx.csh
+   - Monitor output log file under $LNHOME/data/out
+8. Postprocess and visualize results
+   - cd $LNHOME/solver/util
+   - Edit SETPAR
+   - ./gt2gr
+   - Convert grd file to nc file: cdo -f nc import_binary xxx.ctl output_temp.nc
+
+## CTL File Example
+
+```{code-cell} linux
+* sample file fot products of a linear integration
+DSET ^linear.test.grd
+OPTIONS SEQUENTIAL YREV BIG_ENDIAN
+TITLE time-integration
+UNDEF -999.
+XDEF 64 LINEAR 0. 5.625
+YDEF 32 LEVELS -85.761 -80.269 -74.745 -69.213 -63.679 -58.143 -52.607
+-47.070 -41.532 -35.995 -30.458 -24.920 -19.382 -13.844 -8.3067 -2.7689
+2.7689 8.3067 13.844 19.382 24.920 30.458 35.995 41.532 47.070 52.607
+58.143 63.679 69.213 74.745 80.269 85.761
+ZDEF 11  LEVELS 1000 950 900 850 700 500 300 200 100 30 10
+TDEF 60 LINEAR 01jan0000 1dy
+VARS 8
+psi    11 99 stream function     [m**2/s]
+chi    11 99 velocity potential  [m**2/s]
+u      11 99 zonal wind          [m/s]
+v      11 99 meridional wind     [m/s]
+w      11 99 p-vertical velocity [hPa/s]
+t      11 99 temperature         [K]
+z      11 99 geopotential height [m]
+p       1 99 surface pressure    [hPa]
+ENDVARS
+```
 
 ## Tropical Forcing Example
 ```{figure} /_static/lecture_specific/figures/lbm_cp_forcing.gif
@@ -55,7 +116,7 @@ I have ported LBM on workstation xxx. Please ask your group leaders for login in
   - [GrADS](http://www.atmos.rcast.u-tokyo.ac.jp/nishii/programs/index.html)
   - [Python](https://github.com/marisolosman/Reunion_Clima/blob/master/WAF/Calculo_WAF.ipynb)
 - Rossby Wave Source
-  - [Python] (https://ajdawson.github.io/windspharm/latest/examples/rws_standard.html) 
+  - [Python](https://ajdawson.github.io/windspharm/latest/examples/rws_standard.html) 
 - Streamfunction and Velocity Potential
   - [Python](https://ajdawson.github.io/windspharm/latest/examples/sfvp_standard.html)
 

@@ -31,6 +31,39 @@ I have ported LBM on workstation xxx. Please ask your group leaders for login in
 
 ## Running the Model
 
+1. Copy folder LBM_standard to your own directory.
+2. export LNHOME='/home/xxx/LBM_xxx/ln_solver'
+3. Edit Lmake.inc file
+4. Compile model:
+   - cd $LNHOME/model/src
+   - make clean
+   - make lib 
+   - You should find a file called liblbm2t21ml11c.a under $LNHOME/model/lib/linux/
+5. Builde model:
+   - cd $LNHOME/model/src 
+   - make clean.special
+   - make lbm
+   - You should find a file called lbm2.t21ml11ctintgr under $LNHOME/model/bin/linux
+6. Prepare forcing:
+   - cd $LNHOME/solver/util
+   - Edit SETPAR
+   - make clean
+   - make
+   - ./mkfrcng
+   - cd $LNHOME/sample/
+   - You should see the forcing file you created.
+   - Use Grads to check forcing (e.g., (1) edit xxx.ctl, (2) type grads, (3) open xxx.ctr, (4) d t)
+7. Run model:
+   - cd $LNHOME/model/sh/tintgr
+   - Edit xxx.csh (e.g., linear-run.t21l5.test.csh)
+   - ./xxx.csh
+   - Monitor output log file under $LNHOME/data/out
+8. Postprocess and visualize results
+   - cd $LNHOME/solver/util
+   - Edit SETPAR
+   - ./gt2gr
+   - Convert grd file to nc file: cdo -f nc import_binary xxx.ctl output_temp.nc
+
 ## Tropical Forcing Example
 ```{figure} /_static/lecture_specific/figures/lbm_cp_forcing.gif
 :scale: 40%
@@ -44,7 +77,7 @@ I have ported LBM on workstation xxx. Please ask your group leaders for login in
   - [GrADS](http://www.atmos.rcast.u-tokyo.ac.jp/nishii/programs/index.html)
   - [Python](https://github.com/marisolosman/Reunion_Clima/blob/master/WAF/Calculo_WAF.ipynb)
 - Rossby Wave Source
-  - [Python] (https://ajdawson.github.io/windspharm/latest/examples/rws_standard.html) 
+  - [Python](https://ajdawson.github.io/windspharm/latest/examples/rws_standard.html) 
 - Streamfunction and Velocity Potential
   - [Python](https://ajdawson.github.io/windspharm/latest/examples/sfvp_standard.html)
 
