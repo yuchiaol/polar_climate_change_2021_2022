@@ -22,7 +22,7 @@
 - Write one short paragraph to summarize what you find from above figures:
   - What is the difference between your results and, for example, NSIDC releases?
   - How sea ice changes with time? Secular trends? Interannual variability?
-- Be creative!
+- Be creative! For example, [climate spiral](http://www.climate-lab-book.ac.uk/spirals/).
 
 ## Sea-ice Datasets
 

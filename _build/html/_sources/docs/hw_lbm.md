@@ -18,9 +18,9 @@ kernelspec:
 ## Credits: 15%
 
 ## Grading:
-- Yu-Chiao Liang (9%)
-- TA xxx (3%) 
-- TA xxx (3%)
+- Yu-Chiao Liang (7%)
+- TA xxx (4%) 
+- TA xxx (4%)
 
 ## Deadline: xxx
 
@@ -28,7 +28,7 @@ kernelspec:
 
 - Set up and run the model successfully.
 - Learn how to change forcing strength, shape, and location.
-- Reproduce the Central Pacific forcing.
+- Reproduce the results with Central Pacific warming.
 - Check:
   - Background fields and forcings.
   - Winds, sea-level pressure, geopotential height, temperature fields.
