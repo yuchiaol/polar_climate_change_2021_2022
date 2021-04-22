@@ -15,23 +15,23 @@ kernelspec:
 
 2021/22 Semester; Credit: 3; Class Number: xxx
 
-## Instructor
+### Instructor
 Professor Yu-Chiao Liang (梁禹喬)<br>
 Contacting email: xxx@xxx.xxx<br>
 Office phone: xxx-xxx-xxx<br>
 
-## Teaching Assistants
+### Teaching Assistants
 
-## Office Hours
+### Office Hours
 xxx and xxx, by appointment 
 
-## Location and Time
+### Location and Time
 xxx and xxx
 
-## Website
+### Website
 [https://yuchiaol.github.io/polar_climate_change_2021_2022/docs/index.html](https://yuchiaol.github.io/polar_climate_change_2021_2022/docs/index.html)
 
-## Grading
+### Grading
 - Leading discussion: 
   - IPCC’s Special Report (group presentation 15%)
   - Assigned literature (group presentation 15%))
@@ -41,19 +41,19 @@ xxx and xxx
 - Final project (group presentation 30%)
 - Additional credit (5%)
 
-## Course Description
+### Course Description
 
 (in Chinese) 本課程探討極區的氣候變化。我們不僅介紹極區冰圈以及大氣圈過去幾十年的快速變化，包括海冰，永凍土，降雪，冰河，極地渦旋，也會介紹北極暖化增強現象的成因與影響，以及探討高緯度氣候變化與中低緯度大氣海洋環流的交互作用。我們會閱讀IPCC最新關於冰圈的特別報告以及最新的研究文獻，來幫助我們掌握極區最新的研究成果與發展趨勢，同時也會使用不同複雜度的大氣模式，來加深了解極區與中低緯度大氣環流交互作用背後的物理動力機制。
 
 Rapid polar climate change in the past decades was the dominant signature of anthropogenic global warming. This course aims to understand the polar climate change and its interaction with regional and global atmospheric circulations. The first part gives an overview of the fast-changing polar cryosphere and atmosphere, including sea ice, permafrost, snow, glaciers, and stratospheric polar vortex. Students will read IPCC’s Special Report on the Ocean and Cryosphere in a Changing Climate and present main conclusions. The second part discusses the two-way interactions of the polar climate change and lower-latitude (including mid-latitude and tropical) atmospheric and oceanic circulations at various spatial and temporal scales, with an emphasis on the cause and effect of Arctic Amplification. We will use a hierarchical modelling approach with different complexity in attempt to understand the potential atmospheric circulation changes in response to polar warming. The anticipated results will be compared to the observations and the state-of-the-art global climate model simulations, for example CMIP5/6 and Polar Amplification Model Intercomparison Project.
 
-## Course Objectives
+### Course Objectives
 This course aims to 1) understand the polar climate change and its interaction with regional and global atmospheric circulations, 2) cover some materials of Chapter 12 - Middle Atmosphere Dynamics - in Holton’s “An Introduction to Dynamic Meteorology”, and 3) train students to use simple atmospheric models to investigate Arctic-midlatitude connections. 
 
-## Course Requirements
+### Course Requirements
 Willingness to lead discussion for reading materials and participate in group cooperation, and basic FORTRAN programing and plotting skills (Python preferred because we will use a machine learning package written in Python!). 
 
-## Tentative Topics
+### Tentative Topics
 - Overview of Arctic
   - Geography, climatology and meteorology
   - A case study for Siberian record-breaking warming
@@ -77,9 +77,9 @@ Willingness to lead discussion for reading materials and participate in group co
   - Polar vortex and stratospheric sudden warming
   - Stratosphere-troposphere coupling
 
-## Tentative Schedule
+### Tentative Schedule
 
-## Relevant Texts and References
+### Relevant Texts and References
 - [IPCC Special Report on the Ocean and Cryosphere in a Changing Climate](https://www.ipcc.ch/srocc)
   - [Chapter 3 Polar Regions](https://www.ipcc.ch/srocc/chapter/chapter-3-2/)
 
@@ -107,7 +107,7 @@ Willingness to lead discussion for reading materials and participate in group co
   - Stationary wave response to midlatitude forcing: {cite}`ting1991stationary`
   - Time integrations: {cite}`jin1995direct`
 
-## Bibliography
+### Bibliography
 
 ```{bibliography} ../_bibliography/references.bib
 ```

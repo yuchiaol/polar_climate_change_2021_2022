@@ -13,18 +13,18 @@ kernelspec:
 
 # HW Polar Vortex & Machine Learning
 
-## Individual Work
+### Individual Work
 
-## Credits: 10%
+### Credits: 10%
 
-## Grading:
+### Grading:
 - Yu-Chiao Liang (4%)
 - TA xxx (3%)
 - TA xxx (3%)
 
-## Deadline: xxx
+### Deadline: xxx
 
-## The Tasks
+### The Tasks
 
 - Use zonal winds (U) at 10 hPa to categorize different type of stratospheric polar vortex.
 - Understand the basic idea of unsupervised machine learning technique.
@@ -33,7 +33,7 @@ kernelspec:
 - Create dendrogram.
 - Explain and interpret your results properly.
 
-## Examples
+### Examples
 
 I prepare a python script for your reference based on [Kretschmer et al. (2018)](https://journals.ametsoc.org/view/journals/bams/99/1/bams-d-16-0259.1.xml).
 
@@ -252,7 +252,7 @@ if __name__ == '__main__':
        ax.plot(year, ts_u10[II+4,:])
 ```
 
-## Results
+### Results
 
 ```{figure} /_static/lecture_specific/figures/z_cluster_tmp_plot.jpg
 :scale: 40%
@@ -261,9 +261,7 @@ if __name__ == '__main__':
 :scale: 45%
 ```
 
-
-
-## Source
+### Source
 
 - [Kretschmer et al. (2018)](https://journals.ametsoc.org/view/journals/bams/99/1/bams-d-16-0259.1.xml).
 
