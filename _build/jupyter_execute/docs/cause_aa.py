@@ -84,6 +84,8 @@ A schematic of some important radiative and non-radiative feedbacks in polar reg
 - Oceanic transport
   - Circulation anomalies
   - Heat anomalies
+- Remote forcing from tropics?
+- Timescale affects the portion of atmospheric and oceanic heat transports
 
 ### Coupling Between Mechanisms 
 
