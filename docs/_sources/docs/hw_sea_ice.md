@@ -27,9 +27,9 @@ kernelspec:
 ### The Tasks
 
 - Download sea-ice gridded dataset
-- Create one figure to demonstrate the spatial information of Arctic sea ice changes in the past decades.
-- Create one figure to demonstrate the temporal evolution of September Arctic sea ice since 1979.
-- Create one figure to demonstrate the temporal evolution of daily Arctic sea ice from January 2021 to present.
+- Demonstrate the spatial information of Arctic sea ice changes in the past decades.
+- Demonstrate the temporal evolution of September Arctic sea ice since 1979.
+- Demonstrate the temporal evolution of daily Arctic sea ice from January 2021 to present.
 - Write one short paragraph to summarize what you find from above figures:
   - What is the difference between your results and, for example, NSIDC releases?
   - How sea ice changes with time? Secular trends? Interannual variability?

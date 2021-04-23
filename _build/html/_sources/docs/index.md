@@ -8,7 +8,7 @@ written by [Yu-Chiao Liang](https://littleyuchiao.wixsite.com/yuchiaol/).
 This course aims to introduce the Arctic climate change and its interaction with regional and global climate. 
 We will overview the fast-changing polar cryosphere in the past decades, 
 and discuss the two-way interactions of the changing Arctic climate and 
-lower-latitude atmospheric and oceanic circulations at various spatiotemporal scales, 
+lower-latitude (midlatitudes and tropics) atmospheric and oceanic circulations at various spatiotemporal scales, 
 along with cause-and-effect and signal-to-noise issues addressed.
 
 We will use an idealized modelling approach
