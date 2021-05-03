@@ -43,6 +43,7 @@ Permafrost zones and locations for CO2 and methane flux measurements collected w
 
 ### Thawing Permafrost and Climate Change
 
+- Satellite observations (e.g., GRACE and ICESat)
 - Air temperature
 - Moisture
 - Active layer

@@ -120,6 +120,7 @@ kernelspec:
 
 ### Sea-Ice Modelling
 
+- [Prof. Ian Eisenman's idealised model](http://eisenman.ucsd.edu/code.html)
 - [CESM tutorial](https://www.cesm.ucar.edu/events/tutorials/2019/videos/2019_CESM_tutorial_alice_duvivier.mp4)
 
 ### Sea-ice Prediction
@@ -154,4 +155,4 @@ kernelspec:
 - [NSIDC Arctic sea ice news & analysis](https://nsidc.org/arcticseaicenews/)
 - [NCAR CESM tutorial lecture: Extremes in the Arctic](http://www.cesm.ucar.edu/events/tutorials/2020/coursework.html)
 - [NASA Sea Level Rise Seminar: On pancakes and polynyas: The role of waves in sea ice formation](https://www.youtube.com/watch?v=Q3dAJJOtFmU)
-
+- [CarbonBrief arcticle](https://interactive.carbonbrief.org/when-will-the-arctic-see-its-first-ice-free-summer/)
