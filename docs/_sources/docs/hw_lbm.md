@@ -18,9 +18,7 @@ kernelspec:
 ### Credits: 15%
 
 ### Grading:
-- Yu-Chiao Liang (7%)
-- TA xxx (4%) 
-- TA xxx (4%)
+- Yu-Chiao Liang (10%)
 
 ### Deadline: xxx
 
