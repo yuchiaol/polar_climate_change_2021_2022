@@ -13,12 +13,12 @@ kernelspec:
 
 # Syllabus
 
-2021/22 Semester; Credit: 3; Class Number: xxx
+2021/22 Semester; Credit: 3; Class Number: AtmSci7098
 
 ### Instructor
 Professor Yu-Chiao Liang (梁禹喬)<br>
-Contacting email: xxx@xxx.xxx<br>
-Office phone: xxx-xxx-xxx<br>
+Contacting email: yuchiaoliang@ntu.edu.tw<br>
+Office phone: 02-3366-3907<br>
 
 ### Teaching Assistants
 
@@ -26,14 +26,14 @@ Office phone: xxx-xxx-xxx<br>
 xxx and xxx, by appointment 
 
 ### Location and Time
-xxx and xxx
+Online with Google Meet, Monday 1:20-3:10 pm and Thursday 11:20 am-12:10
 
 ### Website
 [https://yuchiaol.github.io/polar_climate_change_2021_2022/docs/index.html](https://yuchiaol.github.io/polar_climate_change_2021_2022/docs/index.html)
 
 ### Grading
 - Leading discussion: 
-  - IPCC’s Special Report (group presentation 15%)
+  - IPCC AR6 WGI Report (group presentation 15%)
   - Assigned literature (group presentation 15%))
 - Sea-ice data illustration (individual homework assignment 10%)
 - Polar vortex and machine learning applications (individual homework assignment 10%)

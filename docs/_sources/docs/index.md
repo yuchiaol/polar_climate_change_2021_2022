@@ -22,6 +22,7 @@ Here are some useful and relevant online materials:
     -   [About the Cryosphere](https://nsidc.org/cryosphere/)
 -   [NOAA Arctic Report Card](https://arctic.noaa.gov/Report-Card)
     -   [Update for 2020](https://www.arctic.noaa.gov/Report-Card/Report-Card-2020)  
+-   [IPCC AR6 WG1 Report](https://www.ipcc.ch/report/ar6/wg1/#FullReport)
 -   [IPCC Special Report on the Ocean and Cryosphere in a Changing Climate](https://www.ipcc.ch/srocc)
     -   [Chapter 3 Polar Regions](https://www.ipcc.ch/srocc/chapter/chapter-3-2/)
 -   [Linear baroclinic model](https://ccsr.aori.u-tokyo.ac.jp/~lbm/sub/lbm_4.html)
