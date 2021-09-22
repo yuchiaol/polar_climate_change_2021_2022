@@ -25,7 +25,7 @@ Ms Yi-Jhen Zeng (曾怡甄)<br>
 Contacting email: r10229015@ntu.edu.tw<br>
 
 ### Office Hours
-xxx and xxx, by appointment 
+By appointment 
 
 ### Location and Time
 Online with Google Meet, Monday 1:20-3:10 pm and Thursday 11:20 am-12:10
@@ -80,6 +80,13 @@ Willingness to lead discussion for reading materials and participate in group co
   - Stratosphere-troposphere coupling
 
 ### Tentative Schedule
+- Week1 9/23 (四4): Introduction
+- Week1 9/27 (一67): Overview of Arctic
+- Week2 9/30 (四4): LBM introduction; machine location and account
+- Week2 10/4 (一67): Permafrost + IPCC
+- Week3 10/7 (四4): IPCC; LBM paper review
+- Week3 10/11 (一67): 國慶日/雙十節彈性放假
+
 
 ### Relevant Texts and References
 - [IPCC Special Report on the Ocean and Cryosphere in a Changing Climate](https://www.ipcc.ch/srocc)
