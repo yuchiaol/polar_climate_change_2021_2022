@@ -50,7 +50,7 @@ Online with Google Meet, Monday 1:20-3:10 pm and Thursday 11:20 am-12:10
 Rapid polar climate change in the past decades was the dominant signature of anthropogenic global warming. This course aims to understand the polar climate change and its interaction with regional and global atmospheric circulations. The first part gives an overview of the fast-changing polar cryosphere and atmosphere, including sea ice, permafrost, snow, glaciers, and stratospheric polar vortex. Students will read IPCC’s AR6 WG1 and Special Report on the Ocean and Cryosphere in a Changing Climate and present main conclusions. The second part discusses the two-way interactions of the polar climate change and lower-latitude (including mid-latitude and tropical) atmospheric and oceanic circulations at various spatial and temporal scales, with an emphasis on the cause and effect of Arctic Amplification. We will use a hierarchical modelling approach with different complexity in attempt to understand the potential atmospheric circulation changes in response to polar warming. The anticipated results will be compared to the observations and the state-of-the-art global climate model simulations, for example CMIP5/6 and Polar Amplification Model Intercomparison Project.
 
 ### Course Objectives
-This course aims to 1) understand the polar climate change and its interaction with regional and global atmospheric circulations, 2) cover some materials of Chapter 12 - Middle Atmosphere Dynamics - in Holton’s “An Introduction to Dynamic Meteorology”, and 3) train students to use simple atmospheric models to investigate Arctic-midlatitude connections. 
+This course aims to 1) understand the polar climate change and its interaction with regional and global atmospheric circulations, 2) cover some materials of Chapter 12 - Middle Atmosphere Dynamics - in Holton’s “An Introduction to Dynamic Meteorology” (I will try!), and 3) train students to use simple atmospheric models to investigate Arctic-midlatitude connections. 
 
 ### Course Requirements
 Willingness to lead discussion for reading materials and participate in group cooperation, and basic FORTRAN programing and plotting skills (Python preferred because we will use a machine learning package written in Python!). 
@@ -113,6 +113,7 @@ Willingness to lead discussion for reading materials and participate in group co
 - Week16,1/6 (四4): Wrap-up
 
 ### Relevant Texts and References
+- [IPCC AR6 WG1 Report](https://www.ipcc.ch/report/ar6/wg1/#FullReport)
 - [IPCC Special Report on the Ocean and Cryosphere in a Changing Climate](https://www.ipcc.ch/srocc)
   - [Chapter 3 Polar Regions](https://www.ipcc.ch/srocc/chapter/chapter-3-2/)
 
